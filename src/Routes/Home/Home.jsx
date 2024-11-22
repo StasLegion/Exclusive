@@ -1,6 +1,8 @@
 import React from 'react';
-import styles from './Home.module.css';
 import { NavLink } from 'react-router-dom';
+import apple from '../../images/banner/apple.png'
+import phone from '../../images/banner/banner.png'
+import styles from './Home.module.css';
 
 export const Home = () => {
   return (
@@ -16,7 +18,19 @@ export const Home = () => {
         <NavLink>Groceries & Pets</NavLink>
         <NavLink>Health & Beauty</NavLink>
       </nav>
-      <div className={styles.right}></div>
+      <div className={styles.right}>
+        <div className={styles.info}>
+          <div className={styles.apple_name}>
+            <img src={apple} alt="" />
+            <span>iPhone 14 Series</span>
+          </div>
+          <h1>Up to 10% off Voucher</h1>
+          <span>Shop Now &rarr;</span>
+        </div>
+        <div className={styles.img}>
+          <img src={phone} alt="" />
+        </div>
+      </div>
     </main>
   )
 }
