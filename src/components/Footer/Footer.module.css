@@ -5,34 +5,70 @@ footer {
 }
 
 .top {
+   width: 1070px;
+   margin: 0 auto;
    display: flex;
    height: 376px;
-   gap: 70px;
+   gap: 87px;
    justify-content: space-between;
    padding: 80px 0 60px;
 }
 
+.top div {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
 .block_1 h2 {
    font-weight: 700;
-   font-size: 23px;
+   font-size: 24px;
 }
 
 .block_1 h3 {
    font-weight: 500;
-   font-size: 19px;
+   font-size: 20px;
    line-height: 28px;
 }
 
 .block_1 p {
    font-weight: 400;
-   font-size: 15px;
+   font-size: 16px;
    line-height: 24px;
 }
 
+.input_block {
+   position: relative;
+}
+
+.input_block img {
+   position: absolute;
+   right: 10px;
+   top: 7px;
+}
+
 .block_1 input {
-   width: 217px;
-   height: 34px;
+   width: 210px;
+   height: 42px;
    font-size: 16px;
+   background: transparent;
+   border: 1px #fff solid;
+   padding-left: 12px;
+}
+
+.block_5 img {
+   width: 100%;
+}
+
+.nav_footer {
+   width: 168px;
+   display: flex;
+   justify-content: space-between;
+   height: 24px;
+}
+
+.nav_footer img {
+   height: 100%;
 }
 
 .bottom {

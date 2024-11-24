@@ -1,5 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import stores from '../../images/footer-img/stores.png';
+import send from '../../images/footer-img/send.png';
+import fb from '../../images/footer-img/fb.png';
+import twit from '../../images/footer-img/twit.png';
+import insta from '../../images/footer-img/insta.png';
+import lkd from '../../images/footer-img/in.png';
 import styles from './Footer.module.css';
 
 export const Footer = () => {
@@ -10,7 +16,10 @@ export const Footer = () => {
           <h2>Exclusive</h2>
           <h3>Subscribe</h3>
           <p>Get 10% off your first order</p>
-          <input placeholder='Enter your email' type="email" />
+          <div className={styles.input_block}>
+            <input placeholder='Enter your email' type="email" />
+            <img src={send} alt="" />
+          </div>
         </div>
         <div className={styles.block_2}>
           <h3>Support</h3>
@@ -36,6 +45,12 @@ export const Footer = () => {
         <div className={styles.block_5}>
           <h3>Download App</h3>
           <img src={stores} alt="" />
+          <nav className={styles.nav_footer}>
+            <Link><img src={fb} alt="" /></Link>
+            <Link><img src={twit} alt="" /></Link>
+            <Link><img src={insta} alt="" /></Link>
+            <Link><img src={lkd} alt="" /></Link>
+          </nav>
         </div>
       </div>
       <div className={styles.bottom}>

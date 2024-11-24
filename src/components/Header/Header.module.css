@@ -1,16 +1,21 @@
-
 .top {
    height: 48px;
    background-color: black;
    color: white;
-   position: relative;
-   align-content: center;
-   text-align: center;
    font-size: 14px;
    line-height: 21px;
 }
 
-.top a {
+.top_content {
+   position: relative;
+   max-width: 1170px;
+   margin: 0 auto;
+   text-align: center;
+   align-content: center;
+   height: 100%;
+}
+
+.top_content a {
    font-weight: 600;
    color: #fff;
    margin-left: 5px;
@@ -24,6 +29,8 @@
 
 .bottom {
    display: flex;
+   max-width: 1170px;
+   margin: 0 auto;
    justify-content: space-between;
    align-items: center;
    height: 94px;
@@ -42,6 +49,7 @@
 
 .right img {
    height: 100%;
+   margin-left: 18px;
 }
 
 .search {
@@ -62,4 +70,8 @@
 .search input {
    width: 243px;
    height: 38px;
+   padding: 7px 12px 7px 20px;
+   border: none;
+   background-color: #eee;
 }
+

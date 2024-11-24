@@ -11,11 +11,13 @@ export const Header = () => {
   return (
     <header>
       <div className={styles.top}>
-        <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</span>
-        <Link>ShopNow</Link>
-         <span className={styles.lang}>
-            English <img src={tick} alt="" />
-          </span>
+        <div className={styles.top_content}>
+          <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</span>
+          <Link>ShopNow</Link>
+          <span className={styles.lang}>
+              English <img src={tick} alt="" />
+            </span>
+        </div>
       </div>
       <div className={styles.bottom}>
         <Link to="/"><img src={logo} alt="" /></Link>
@@ -27,7 +29,7 @@ export const Header = () => {
         </nav>
         <div className={styles.right}>
           <span className={styles.search}>
-            <input type="text" />
+            <input placeholder='What are you looking for?' type="text" />
             <img src={search} alt="" />
           </span>
           <img src={favirite} alt="" />
