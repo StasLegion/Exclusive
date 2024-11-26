@@ -1,6 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FlashSales } from '../../components/FlashSales/FlashSales';
+import { BrowseByCategory } from '../../components/BrowseByCategory/BrowseByCategory';
+import { BestSelling } from '../../components/BestSelling/BestSelling';
+import { EnhanceMusic } from '../../components/enhanceMusic/EnhanceMusic';
+import { ExploreOurPro } from '../../components/Explore/ExploreOurPro';
+import { NewArrival } from '../../components/newArrival/NewArrival';
+import { FooterAbout } from '../../components/FooterAbout/FooterAbout';
 import apple from '../../images/banner/apple.png'
 import phone from '../../images/banner/banner.png'
 import styles from './Home.module.css';
@@ -35,6 +41,12 @@ export const Home = () => {
         </div>
       </main>
       <FlashSales />
+      <BrowseByCategory />
+      <BestSelling />
+      <EnhanceMusic />
+      <ExploreOurPro />
+      <NewArrival />
+      <FooterAbout />
     </>
   )
 }

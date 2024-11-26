@@ -1,66 +1,11 @@
 .flashSales {
-   height: 493px;
-   overflow-x: auto;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-}
-
-.top {
-   display: flex;
+   min-height: 493px;
    width: 1170px;
-   height: 103px;
-   margin: 0 auto;
-   align-items: end;
-}
-
-.title {
-   height: 100%;
-   margin-right: 87px;
+   margin: 0 auto 80px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-}
-
-.title span {
-   font-size: 16px;
-   font-weight: 600;
-   color: #DB4444;
-   border-left: 20px #DB4444 solid;
-   border-radius: 6px;
-}
-
-.title h1 {
-   font-size: 36px;
-   font-weight: 600;
-}
-
-.date {
-   display: flex;
-   justify-content: space-between;
-   width: 300px;
-   height: 75px;
-}
-
-.number {
-   height: 100%;
-}
-
-.number span {
-   font-weight: 500;
-   font-size: 12px;
-}
-
-.number h1 {
-   font-size: 32px;
-   font-weight: 700;
-}
-
-.colon {
-   font-size: 32px;
-   font-weight: 500;
-   color: #DB4444;
-   line-height: 2.7;
+   border-bottom: 1px #00000028 solid;
 }
 
 .block {

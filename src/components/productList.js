@@ -1,3 +1,5 @@
+import { BrowseByCategory } from "./BrowseByCategory/BrowseByCategory";
+
 export const productList = {
    flashSales: [
       {
@@ -35,16 +37,19 @@ export const productList = {
          img: '/assets/images/the_noarth_coat.png',
          title: 'The north coat',
          price: 260,
+         oldprice: 360,
       },
       {
          img: '/assets/images/gucci_duffle_bag.png',
          title: 'Gucci duffle bag',
          price: 960,
+         oldprice: 1160,
       },
       {
          img: '/assets/images/rgb_liquid_cpu_cooler.png',
          title: 'RGB liquid CPU Cooler',
          price: 160,
+         oldprice: 170,
       },
       {
          img: '/assets/images/small_bookself.png',
@@ -94,5 +99,31 @@ export const productList = {
          title: 'Quilted Satin Jacket',
          price: 660,
       },
-   ]
+   ],
+   browseByCategory: [
+      {
+         img: '/assets/images/browse-category/bc-1.png',
+         title: 'Phones',
+      },
+      {
+         img: '/assets/images/browse-category/bc-2.png',
+         title: 'Computers',
+      },
+      {
+         img: '/assets/images/browse-category/bc-3.png',
+         title: 'SmartWatch',
+      },
+      {
+         img: '/assets/images/browse-category/bc-4.png',
+         title: 'Camera',
+      },
+      {
+         img: '/assets/images/browse-category/bc-5.png',
+         title: 'HeadPhones',
+      },
+      {
+         img: '/assets/images/browse-category/bc-6.png',
+         title: 'Gaming',
+      },
+   ],
 };

@@ -1,0 +1,34 @@
+.footerAbout {
+   display: flex;
+   gap: 88px;
+   justify-content: space-between;
+   width: 943px;
+   height: 161px;
+   margin: 0 auto 140px;
+}
+
+.block {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.block_info {
+   text-align: start;
+}
+
+.block img {
+   width: 80px;
+}
+
+.block h2 {
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 28px;
+}
+
+.block span {
+   font-size: 14px;
+   line-height: 21px;
+}

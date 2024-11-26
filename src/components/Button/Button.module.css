@@ -1,0 +1,14 @@
+.btnAllview {
+   display: block;
+   font-size: 16px;
+   color: #fafafa;
+   background-color: #DB4444;
+   cursor: pointer;
+   transition: .2s;
+   border: none;
+   height: 56px;
+}
+
+.btnAllview:hover {
+   background-color: #a33030;
+}

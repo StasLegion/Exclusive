@@ -1,0 +1,12 @@
+.explore {
+   width: 1170px;
+   min-height: 1016px;
+   margin: 0 auto 140px;
+}
+
+.block {
+   height: 732px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+}

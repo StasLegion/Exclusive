@@ -1,0 +1,29 @@
+.date {
+   display: flex;
+   justify-content: space-between;
+   width: 300px;
+   height: 100%;
+
+}
+
+.number {
+   height: 100%;
+   align-content: end;
+}
+
+.number span {
+   font-weight: 500;
+   font-size: 12px;
+}
+
+.number h1 {
+   font-size: 32px;
+   font-weight: 700;
+}
+
+.colon {
+   font-size: 32px;
+   font-weight: 500;
+   color: #DB4444;
+   align-content: end;
+}

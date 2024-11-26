@@ -1,0 +1,9 @@
+.bestSelling {
+   width: 1170px;
+   margin: 0 auto 140px;
+}
+
+.block {
+   display: flex;
+   gap: 30px;
+}

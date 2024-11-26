@@ -1,0 +1,37 @@
+.browseByCat {
+   min-height: 313px;
+   width: 1170px;
+   margin: 0 auto 70px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   border-bottom: 1px #00000028 solid;
+}
+
+.block {
+   display: flex;
+   gap: 30px;
+   justify-content: space-between;
+   margin-bottom: 70px;
+}
+
+.img {
+   width: 170px;
+   height: 145px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #eee;
+   transition: .2s;
+}
+
+.img:hover {
+   background-color: #DB4444;
+   color: #fff;
+}
+
+.img img {
+   width: 56px;
+   height: 56px;
+}
