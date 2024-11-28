@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import tick from '../../images/tick.png';
 import logo from '../../images/logo.png';
+import user from '../../images/user.png';
+import cancel from '../../images/usercontext/icon-cancel.png';
+import logout from '../../images/usercontext/Icon-logout.png';
+import mallbag from '../../images/usercontext/icon-mallbag.png';
+import reviews from '../../images/usercontext/Icon-reviews.png';
+import usericon from '../../images/usercontext/user.png';
 import favirite from '../../images/navicons/favorite-icon.png';
 import cart from '../../images/navicons/cart-icon.png';
 import search from '../../images/navicons/search-icon.png';
 import styles from './Header.module.css';
 
 export const Header = () => {
+
+  const [show, setShow] = useState(false);
+  const toggleClick = () => {
+    setShow(!show)
+  }
+
   return (
     <header>
       <div className={styles.top}>
@@ -33,7 +45,37 @@ export const Header = () => {
             <img src={search} alt="" />
           </span>
           <img src={favirite} alt="" />
-          <img src={cart} alt="" />
+          <Link to='/cart'>
+            <img src={cart} alt="" />
+          </Link>
+          <span onClick={toggleClick} className={styles.user}>
+            <img src={user} alt="" />
+            <div
+              style={{display: `${show === false ? "none" : 'flex'}`}}
+              className={styles.context}>
+
+              <Link>
+                <img src={usericon} alt="" />
+                <span>Manage My Account</span>
+              </Link>
+              <Link>
+                <img src={mallbag} alt="" />
+                <span>My order</span>
+              </Link>
+              <Link>
+                <img src={cancel} alt="" />
+                <span>My Cancellations</span>
+              </Link>
+              <Link>
+                <img src={reviews} alt="" />
+                <span>My Reviews</span>
+              </Link>
+              <Link>
+                <img src={logout} alt="" />
+                <span>Logout</span>
+              </Link>
+            </div>
+          </span>
         </div>
       </div>
     </header>

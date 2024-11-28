@@ -1,0 +1,59 @@
+.blockProduct {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   height: 102px;
+}
+
+.blockProduct div {
+   width: 25%;
+   text-align: center;
+}
+
+.product {
+   display: flex;
+   width: 177px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.product h3 {
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.img {
+   width: 54px;
+   height: 54px;
+}
+
+.img img {
+   width: 100%;
+}
+
+.price {
+   font-size: 16px;
+}
+
+.counter_block {
+   width: 72px;
+   height: 44px;
+   display: flex;
+   align-items: center;
+   border: 1px #000 solid;
+   border-radius: 4px;
+   justify-content: space-around;
+}
+
+.counter {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.counter span {
+   transform: rotate(90deg);
+   line-height: 1;
+   cursor: pointer;
+}
