@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { MainLayouts } from '../../components/MainLayouts/MainLayouts';
 import { Home } from '../Home/Home';
 import { Cart } from '../Cart/Cart';
+import { Wishlist } from '../Wishlist/Wishlist';
 import './AppRouter.css'
 
 export const AppRouter = () => {
@@ -11,6 +12,7 @@ export const AppRouter = () => {
         <Route path='/' element={<MainLayouts />}>
           <Route index element={<Home />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='/wishlist' element={<Wishlist />} />
         </Route>
       </Routes>
   )

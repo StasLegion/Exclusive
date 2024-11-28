@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { CountIcon } from '../CountIcon/CountIcon';
+import { useSelector } from 'react-redux';
 import tick from '../../images/tick.png';
 import logo from '../../images/logo.png';
 import user from '../../images/user.png';
@@ -8,7 +10,7 @@ import logout from '../../images/usercontext/Icon-logout.png';
 import mallbag from '../../images/usercontext/icon-mallbag.png';
 import reviews from '../../images/usercontext/Icon-reviews.png';
 import usericon from '../../images/usercontext/user.png';
-import favirite from '../../images/navicons/favorite-icon.png';
+import favorite from '../../images/navicons/favorite-icon.png';
 import cart from '../../images/navicons/cart-icon.png';
 import search from '../../images/navicons/search-icon.png';
 import styles from './Header.module.css';
@@ -19,6 +21,11 @@ export const Header = () => {
   const toggleClick = () => {
     setShow(!show)
   }
+
+  const {products} = useSelector(state => state.cart);
+  const {wishlist} = useSelector(state => state.wish);
+  const countInCart = products.length;
+  const countInWish = wishlist.length;
 
   return (
     <header>
@@ -44,38 +51,45 @@ export const Header = () => {
             <input placeholder='What are you looking for?' type="text" />
             <img src={search} alt="" />
           </span>
-          <img src={favirite} alt="" />
-          <Link to='/cart'>
-            <img src={cart} alt="" />
-          </Link>
-          <span onClick={toggleClick} className={styles.user}>
-            <img src={user} alt="" />
-            <div
-              style={{display: `${show === false ? "none" : 'flex'}`}}
-              className={styles.context}>
-
-              <Link>
-                <img src={usericon} alt="" />
-                <span>Manage My Account</span>
-              </Link>
-              <Link>
-                <img src={mallbag} alt="" />
-                <span>My order</span>
-              </Link>
-              <Link>
-                <img src={cancel} alt="" />
-                <span>My Cancellations</span>
-              </Link>
-              <Link>
-                <img src={reviews} alt="" />
-                <span>My Reviews</span>
-              </Link>
-              <Link>
-                <img src={logout} alt="" />
-                <span>Logout</span>
-              </Link>
+          <div className={styles.icons}>
+            <Link to='/wishlist' className={styles.favorite}>
+              <img src={favorite} alt="" />
+              {countInWish !== 0 && <CountIcon count={countInWish} />}
+            </Link>
+            <Link to='/cart'>
+            <div className={styles.cartIcon}>
+              <img src={cart} alt="" />
+              {countInCart !== 0 && <CountIcon count={countInCart} />}
             </div>
-          </span>
+            </Link>
+            <span onClick={toggleClick} className={styles.user}>
+              <img src={user} alt="" />
+              <div
+                style={{display: `${show === false ? "none" : 'flex'}`}}
+                className={styles.context}>
+                <Link>
+                  <img src={usericon} alt="" />
+                  <span>Manage My Account</span>
+                </Link>
+                <Link>
+                  <img src={mallbag} alt="" />
+                  <span>My order</span>
+                </Link>
+                <Link>
+                  <img src={cancel} alt="" />
+                  <span>My Cancellations</span>
+                </Link>
+                <Link>
+                  <img src={reviews} alt="" />
+                  <span>My Reviews</span>
+                </Link>
+                <Link>
+                  <img src={logout} alt="" />
+                  <span>Logout</span>
+                </Link>
+              </div>
+            </span>
+          </div>
         </div>
       </div>
     </header>

@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { BsCartX } from "react-icons/bs";
+import styles from './ProductInCart..module.css';
 
 export const EmptyCart = () => {
   return (
-    <h1 style={{textAlign: 'center', alignContent: 'center'}}>Корзина пустая :(</h1>
+    <div className={styles.empty}>
+      <h1>
+        Корзина пустая <BsCartX />
+      </h1>
+    </div>
   )
 }

@@ -6,8 +6,7 @@ import styles from './ProductInCart..module.css';
 export const ProductInCart = ({item}) => {
   const dispatch = useDispatch();
   const {products} = useSelector(state => state.cart);
-  const rrrrr = products.find(e => e.title === item.title);
-  console.log(rrrrr.count)
+  const fulPrice = item.price * item.count;
 
   return (
     <div className={styles.blockProduct}>
@@ -21,14 +20,14 @@ export const ProductInCart = ({item}) => {
       <div className={styles.price}>${item.price}</div>
       <div className={styles.quantty}>
         <div className={styles.counter_block}>
-         <span className={styles.count}>{rrrrr.count}</span>
+         <span className={styles.count}>{item.count}</span>
          <span className={styles.counter}>
             <span onClick={() => dispatch(addCount(item))}>&lt;</span>
             <span onClick={() => dispatch(revoweCount(item))}>&gt;</span>
          </span>
         </div>
       </div>
-      <div className={styles.subtotal}></div>
+      <div className={styles.subtotal}>${fulPrice}</div>
     </div>
   )
 }

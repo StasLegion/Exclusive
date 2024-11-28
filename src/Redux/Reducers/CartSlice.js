@@ -4,7 +4,6 @@ const CartSlice = createSlice({
    name: 'cart',
    initialState: {
       products: [],
-      totalprice: 0
    },
    reducers: {
       addProduct: (state, action) => {
@@ -17,16 +16,15 @@ const CartSlice = createSlice({
          const finditem = state.products.find(e => e.title === action.payload.title);
          if(finditem) {
             finditem.count += 1;
-            finditem.price += finditem.price;
          }
       },
 
       revoweCount: (state, action) => {
          const finditem = state.products.find(e => e.title === action.payload.title);
-         const findPrice = state.products.find(e => e.title === action.payload.title);
          if(finditem.count > 1) {
             finditem.count -= 1;
-            finditem.price -= findPrice.price;
+         } else {
+            state.products = state.products.filter(e => e.title !== finditem.title)
          }
       },
    }

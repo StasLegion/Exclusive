@@ -23,11 +23,16 @@
 }
 
 .title span {
+   width: 142px;
+   height: 40px;
+   text-align: start;
    font-size: 16px;
    font-weight: 600;
    color: #DB4444;
    border-left: 20px #DB4444 solid;
    border-radius: 6px;
+   align-content: center;
+   padding-left: 16px;
 }
 
 .title h1 {
