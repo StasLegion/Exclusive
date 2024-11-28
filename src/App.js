@@ -4,6 +4,7 @@ import CreateAccount from "./pages/CreateAccount/CreateAccount.js";
 import Login from "./pages/Login/Login.js";
 import ErrorPages from "./pages/ErrorPages/ErrorPages.js";
 import Contact from "./pages/Contact/Contact.js";
+import About from "./pages/About/About.js";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<CreateAccount />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} /> {/*Contact */}
+        <Route path="/about" element={<About />} /> {/*About*/}
         <Route path="*" element={<ErrorPages />} /> {/* Отображение Error404 */}
       </Routes>
     </Router>

@@ -1,0 +1,58 @@
+.slider {
+  margin-top: 140px;
+  position: relative;
+  width: 1170px;
+  overflow: hidden;
+}
+
+.sliderContent {
+  transition: transform 0.5s ease;
+  display: flex;
+  gap: 30px;
+}
+
+.sliderItem {
+  width: 370px;
+  height: 564px;
+  text-align: justify;
+}
+
+.sliderImag {
+  width: 370px;
+  height: 430px;
+}
+
+.sliderName {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.socialLinks {
+  margin: 0;
+}
+
+.socialLinksIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.buttonSlider {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: gray;
+  transition: background-color 0.3s ease;
+  border: none;
+  margin: 12px;
+}
+
+/* .buttonSlider:hover {
+  background-color: orange;
+  border: 2px solid gray;
+  border-radius: 50%;
+} */

@@ -1,0 +1,34 @@
+.wrapperAbout {
+  margin-left: 135px;
+  margin-top: 80px;
+}
+
+.mainBoxAbout {
+  display: flex;
+  gap: 75px;
+  margin-top: 42px;
+}
+
+.mainBoxAboutStory {
+  width: 525px;
+  height: 336px;
+  margin-top: 128px;
+}
+
+.titleBoxStory {
+  font-size: 54px;
+}
+
+.textBoxStory {
+  font-size: 16px;
+  margin-top: 40px;
+  gap: 24px;
+  padding-right: 40px;
+}
+.aboutBoxService,
+.offersBoxAbout {
+  width: 1170px;
+  display: flex;
+  margin-top: 140px;
+  gap: 30px;
+}
