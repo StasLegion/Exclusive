@@ -305,27 +305,36 @@ const Checkout = () => {
                     alt=""
                   />
                 </div>
-                <label>
-                  <input
-                    type="radio"
-                    value="cash"
-                    checked={paymentMethod === "cash"}
-                    onChange={() => setPaymentMethod("cash")}
-                  />
-                  Cash on Delivery
-                </label>
+                <div className={styles.payMethodCardBank}>
+                  <label>
+                    <input
+                      type="radio"
+                      value="cash"
+                      checked={paymentMethod === "cash"}
+                      onChange={() => setPaymentMethod("cash")}
+                    />
+                    Cash on Delivery
+                  </label>
+                </div>
               </div>
 
-              <div>
+              <div className={styles.payMethodCardCoupon}>
                 <input
                   type="text"
                   placeholder="Coupon Code"
                   value={couponCode}
                   onChange={(e) => setCouponCode(e.target.value)}
                 />
-                <button onClick={handleCouponApply}>Apply Coupon</button>
+                <button
+                  className={styles.buttonApply}
+                  onClick={handleCouponApply}
+                >
+                  Apply Coupon
+                </button>
               </div>
-              <button onClick={handlePlaceOrder}>Place Order</button>
+              <button className={styles.buttonOrder} onClick={handlePlaceOrder}>
+                Place Order
+              </button>
             </div>
           )}
         </div>
