@@ -10,7 +10,7 @@ const Checkout = () => {
     { id: 2, name: "Товар 2", price: 200, quantity: 1 },
   ]);
   const handlePlaceOrder = () => {
-    alert(`Заказ оформлен! Сумма:  руб.`);
+    alert(`Заказ оформлен! $`);
   };
   const handleCouponApply = () => {
     if (couponCode === "DISCOUNT10") {
@@ -66,7 +66,7 @@ const Checkout = () => {
       if (response.data.valid) {
         return response.data;
       } else {
-        throw new Error("Invalid phone number");
+        throw new Error("");
       }
     } catch (error) {
       console.error(error.message);
