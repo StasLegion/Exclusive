@@ -32,3 +32,10 @@
   margin-top: 140px;
   gap: 30px;
 }
+
+.aboutBoxService {
+  margin: 135px 0;
+  width: 1170px;
+  gap: 88px;
+  justify-content: center;
+}

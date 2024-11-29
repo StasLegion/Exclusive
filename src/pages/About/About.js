@@ -1,10 +1,14 @@
 import OfferBox from "../../Components/OfferBox/OfferBox.js";
+import titleStyle from "../../Components/OfferBox/aboutBoxService.module.css";
 import aboutBoxService from "../../Components/OfferBox/aboutBoxService.module.css";
 import Slider from "../../Components/Slider/Slider.js";
 import styles from "./about.module.css";
 import { Link } from "react-router-dom";
 import img from "../../images/Services (1).png";
 import img1 from "../../images/Services.png";
+import img3 from "../../images/Services3.png";
+import img4 from "../../images/Services4.png";
+import img5 from "../../images/Services5.png";
 import SideImage from "../../images/Side Image.png";
 import photo from "../../images/SliderImg/Frame 874.png";
 import photo1 from "../../images/SliderImg/Frame 875.png";
@@ -138,22 +142,28 @@ function About() {
       </div>
       <div className={styles.aboutBoxService}>
         <OfferBox
-          img={img1}
-          title="33k"
-          description="Mopnthly Produduct Sale"
+          img={img3}
+          title="FREE AND FAST DELIVERY"
+          description="Free delivery for all orders over $140"
           className={`${aboutBoxService.aboutBox}`}
+          aboutServiceTitle={titleStyle.aboutTitle}
+          aboutServiceDescription={titleStyle.aboutDescription}
         />
         <OfferBox
-          img={img}
-          title="45.5k"
-          description="Customer active in our site"
+          img={img4}
+          title="24/7 CUSTOMER SERVICE"
+          description="Friendly 24/7 customer support"
           className={`${aboutBoxService.aboutBox}`}
+          aboutServiceTitle={titleStyle.aboutTitle}
+          aboutServiceDescription={titleStyle.aboutDescription}
         />
         <OfferBox
-          img={img1}
-          title="25k"
-          description="Anual gross sale in our site"
+          img={img5}
+          title="MONEY BACK GUARANTEE"
+          description="We reurn money within 30 days"
           className={`${aboutBoxService.aboutBox}`}
+          aboutServiceTitle={titleStyle.aboutTitle}
+          aboutServiceDescription={titleStyle.aboutDescription}
         />
       </div>
     </div>

@@ -3,7 +3,7 @@
   height: 230px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-  padding: 50px 30px;
+  padding: 30px 30px;
   text-align: center;
   margin: 16px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -15,8 +15,8 @@
 }
 
 .offerTitle {
-  font-size: 1.5em;
-  margin: 12px 0;
+  font-size: 32px;
+  margin: 24px 0 12px 0;
 }
 
 .offerBox:hover {

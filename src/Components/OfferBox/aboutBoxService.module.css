@@ -1,18 +1,21 @@
 .aboutBox {
   width: 250px;
-  height: 160px;
+  height: 161px;
   text-align: center;
+  border: none;
+  padding: 0;
+  box-shadow: none;
 }
 
 .aboutBox:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
-.offerImage {
-  width: 80px;
-  height: 80px;
+.aboutTitle {
+  font-size: 19px;
 }
 
-.offerTitle {
-  font-size: 1.5em;
-  margin: 12px 0;
+.aboutDescription {
+  font-size: 14px;
 }
