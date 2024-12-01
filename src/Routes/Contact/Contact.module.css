@@ -1,0 +1,115 @@
+.wrapperContact {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.containerContact {
+  width: 1170px;
+  margin: 80px auto 0 auto;
+  display: flex;
+  gap: 30px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.infoContact {
+  width: 340px;
+  padding: 40px 35px 51px 35px;
+  box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+}
+
+.linksContact {
+  margin-top: 80px;
+}
+
+.infoContactTitleBox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.lineContact {
+  margin: 32px 0;
+  width: 270px;
+  border-bottom: #000000 solid 1px;
+}
+
+.infoContactBox {
+  width: 270px;
+}
+
+.formContact {
+  width: 800px;
+  height: 457px;
+  /* box-shadow: 0px 0px 25px 10px;  */
+  box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+}
+
+.topFormContact {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.boxContact {
+  width: 235px;
+  height: 50px;
+  background: #f5f5f5;
+  border: none;
+}
+
+.boxContact input,
+.boxContact textarea {
+  background: #f5f5f5;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding-left: 16px;
+  width: 235px;
+  height: 50px;
+}
+
+.messageContact {
+  background: #f5f5f5;
+  width: 737px;
+  height: 207px;
+  margin-top: 32px;
+}
+
+.messageContact input,
+.messageContact textarea {
+  background: #f5f5f5;
+  width: 737px;
+  height: 207px;
+  border: none;
+  font-size: 18px;
+  padding: 16px;
+}
+
+.buttonContact {
+  width: 215px;
+  height: 56px;
+  padding: 10px;
+  background-color: #db4444;
+  color: #fafafa;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 32px;
+  margin-left: 522px;
+}
+
+.buttonContact:hover {
+  border: 1px solid #000000;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+.errorBorder {
+  border: 2px solid red; /* Цвет рамки - красный */
+}

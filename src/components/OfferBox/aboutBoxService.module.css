@@ -1,0 +1,21 @@
+.aboutBox {
+  width: 250px;
+  height: 161px;
+  text-align: center;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+.aboutBox:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.aboutTitle {
+  font-size: 19px;
+}
+
+.aboutDescription {
+  font-size: 14px;
+}
