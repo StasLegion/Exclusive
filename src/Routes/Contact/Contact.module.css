@@ -1,6 +1,7 @@
 .wrapperContact {
   width: 1170px;
   margin: 0 auto;
+  margin-bottom: 140px;
 }
 
 .containerContact {
@@ -20,6 +21,14 @@
 
 .linksContact {
   margin-top: 80px;
+}
+
+.linksContact a {
+  color: rgba(0, 0, 0, 0.426);
+}
+
+.linksContact a:last-child {
+  color: black;
 }
 
 .infoContactTitleBox {

@@ -1,6 +1,16 @@
 .wrapperAbout {
-  margin-left: 135px;
+  width: 1170px;
+  margin: 0 auto;
   margin-top: 80px;
+}
+
+.linksAbout a {
+  color: rgba(0, 0, 0, 0.426);
+  text-decoration: none;
+}
+
+.linksAbout a:last-child {
+  color: black;
 }
 
 .mainBoxAbout {

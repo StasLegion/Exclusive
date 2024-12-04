@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import styles from "./checkout.module.css";
 import imageCard1 from "../../images/g27cq4-500x500 1.png";
@@ -128,6 +129,12 @@ const Checkout = () => {
 
   return (
     <div className={styles.wrapperContainrCheckout}>
+      <div className={styles.linksCheckout}>
+        <Link to="/account">Account</Link>/
+        <Link to="/myAccount">My Account</Link>/
+        <Link to="/product">Product</Link>/<Link to="/viewCart">View Cart</Link>
+        /<Link to="/checkout">Checkout</Link>
+      </div>
       <h2 className={styles.titltOne}>Billing Details</h2>
       <div className={styles.containerBox}>
         <div className={styles.checkoutContainer}>

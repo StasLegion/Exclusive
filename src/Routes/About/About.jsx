@@ -91,7 +91,7 @@ function About() {
   ];
   return (
     <div className={styles.wrapperAbout}>
-      <div className={styles.linksContact}>
+      <div className={styles.linksAbout}>
         <Link to="/">Home</Link>/<Link to="/about">About</Link>
       </div>
       <div className={styles.mainBoxAbout}>

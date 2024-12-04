@@ -1,0 +1,104 @@
+.wrapperMyAccount {
+  width: 1170px;
+  margin: 80px auto 140px auto;
+}
+
+.myAccountContainer {
+  display: flex;
+  gap: 100px;
+}
+
+.linksMyAccount {
+  margin-bottom: 80px;
+}
+
+.linksMyAccount a {
+  color: rgba(0, 0, 0, 0.426);
+  text-decoration: none;
+}
+
+.linksMyAccount a:last-child {
+  color: black;
+}
+
+.myAccountNav {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.myAccountNavTitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.myAccountNav a {
+  color: rgba(0, 0, 0, 0.426);
+  align-items: center;
+  text-decoration: none;
+}
+
+.myAccountNav a:hover {
+  color: #db4444;
+}
+
+.myAccountFormTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #db4444;
+}
+
+.myAccountContainer form {
+  width: 870px;
+  height: 630px;
+}
+
+.myAccountBox {
+  justify-content: space-between;
+  width: 710px;
+  height: 82px;
+  display: flex;
+  gap: 50px;
+}
+
+.myAccountLabelBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.myAccountLabelBox h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.myAccountLabelBox input {
+  background-color: #f5f5f5;
+  border: none;
+  width: 330px;
+  height: 50px;
+  padding-left: 16px;
+}
+
+.myAccountPasswordBox {
+  display: flex;
+  flex-direction: column;
+  width: 710px;
+  height: 214px;
+}
+
+.myAccountPasswordTitle {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.myAccountPasswordLabelBox input {
+  background-color: #f5f5f5;
+  width: 710px;
+  height: 50px;
+  margin-top: 16px;
+  border: none;
+  padding-left: 16px;
+}

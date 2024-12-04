@@ -10,6 +10,7 @@ import About from "../About/About.jsx";
 import Checkout from "../Checkout/Checkout.js";
 import CreateAccount from "../CreateAccount/CreateAccount.js";
 import Login from "../Login/Login.js";
+import MyAccount from "../MyAccount/MyAccount.jsx";
 import "./AppRouter.css";
 
 export const AppRouter = () => {
@@ -23,6 +24,7 @@ export const AppRouter = () => {
         <Route path="/about" element={<About />} /> {/*About*/}
         <Route path="/checkout" element={<Checkout />} /> {/*Checkout*/}
         <Route path="/signup" element={<CreateAccount />} /> {/*CreateAccount*/}
+        <Route path="/myAccount" element={<MyAccount />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<ErrorPages />} /> {/* Отображение Error404 */}
       </Route>

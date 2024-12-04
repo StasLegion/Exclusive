@@ -71,7 +71,7 @@ export const Header = () => {
                 style={{ display: `${show === false ? "none" : "flex"}` }}
                 className={styles.context}
               >
-                <Link>
+                <Link to="myAccount">
                   <img src={usericon} alt="" />
                   <span>Manage My Account</span>
                 </Link>
